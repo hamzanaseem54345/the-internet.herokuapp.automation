@@ -1,12 +1,9 @@
 package com.lm.qa.pages;
 
 import java.io.IOException;
-import java.net.URL;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 import com.lm.qa.base.TestBase;
 import com.lm.qa.utility.TestUtil;

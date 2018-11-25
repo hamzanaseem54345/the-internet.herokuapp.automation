@@ -1,7 +1,5 @@
 package com.lm.qa.testcases;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
 
 import org.testng.annotations.AfterTest;
@@ -11,7 +9,6 @@ import org.testng.annotations.Test;
 
 import com.lm.qa.base.TestBase;
 import com.lm.qa.pages.DropDownPage;
-import com.lm.qa.pages.HomePage;
 import com.lm.qa.pages.IndexPage;
 import com.lm.qa.pages.LoginPage;
 
@@ -19,7 +16,7 @@ public class DropDownTest extends TestBase {
 	
 	IndexPage indexpage;
 	LoginPage loginPage;
-	HomePage homePage;
+	
 	LoginTest logintest;
 	String title;
 	
