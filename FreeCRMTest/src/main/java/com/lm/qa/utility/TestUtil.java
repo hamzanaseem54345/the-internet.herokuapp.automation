@@ -23,7 +23,7 @@ public class TestUtil extends TestBase {
 
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 30;
-	public static String filepath="C:\\Users\\Hamza\\git\\the-internet.herokuapp.automation\\FreeCRMTest\\Testdata\\SpreadSheetData.xlsx";
+	//public static String filepath="C:\\Users\\Hamza\\git\\the-internet.herokuapp.automation\\FreeCRMTest\\Testdata\\SpreadSheetData.xlsx";
 	static String testdata;
 	static File src= new File("C:\\Users\\Hamza\\git\\the-internet.herokuapp.automation\\FreeCRMTest\\Testdata\\SpreadSheetData.xlsx");
 
