@@ -1,5 +1,9 @@
 package com.lm.qa.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
@@ -30,6 +34,7 @@ public class MultipleWindowsTestPage extends TestBase {
 		super();
 	}
 
+	
 	@BeforeTest
 	public void setUp() {
 		initialization();

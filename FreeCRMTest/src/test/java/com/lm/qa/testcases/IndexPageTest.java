@@ -1,5 +1,9 @@
 package com.lm.qa.testcases;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -21,6 +25,7 @@ public class IndexPageTest extends TestBase{
 	}
 	
 	@BeforeMethod
+	
 	public void setUp(){
 		initialization();
 		loginPage = new LoginPage();
@@ -30,7 +35,7 @@ public class IndexPageTest extends TestBase{
 	
 	public void indexsuccess() {
 		title= driver.getCurrentUrl();
-		Assert.assertEquals(title, "http://the-internet.herokuapp.com/");
+		AssertJUnit.assertEquals(title, "http://the-internet.herokuapp.com/");
 		System.out.println(title);
 	}
 	
@@ -44,6 +49,7 @@ public class IndexPageTest extends TestBase{
 	
 	
 	@AfterMethod
+	
 	public void tearDown(){
 		driver.quit();
 	}

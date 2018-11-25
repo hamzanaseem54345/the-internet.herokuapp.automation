@@ -1,5 +1,9 @@
 package com.lm.qa.testcases;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.apache.log4j.Priority;
@@ -26,6 +30,7 @@ public class LoginTest extends TestBase{
 		super();
 	}
 	
+	@BeforeMethod
 	@BeforeTest
 	public void setUp(){
 		initialization();
@@ -57,7 +62,7 @@ public class LoginTest extends TestBase{
 		loginPage = new LoginPage();
 		indexpage= new IndexPage();
 		title = loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "The Internet");
+		AssertJUnit.assertEquals(title, "The Internet");
 		
 	}
 	
@@ -74,6 +79,7 @@ public class LoginTest extends TestBase{
 	
 	
 	
+	@AfterMethod
 	@AfterTest
 	public void tearDown(){
 		driver.quit();

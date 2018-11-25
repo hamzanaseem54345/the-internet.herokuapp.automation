@@ -1,5 +1,7 @@
 package com.lm.qa.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
 
 import org.testng.annotations.AfterTest;
@@ -25,6 +27,7 @@ public class DropDownTest extends TestBase {
 		super();
 	}
 	
+	@BeforeMethod
 	@BeforeTest
 	public void setUp(){
 		initialization();
