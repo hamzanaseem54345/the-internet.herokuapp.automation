@@ -11,8 +11,7 @@ import com.lm.qa.pages.LoginPage;
 public class IndexPageTest extends TestBase {
 
 	LoginPage loginPage;
-
-	String title;
+    String title;
 
 	public IndexPageTest() {
 		super();

@@ -2,6 +2,7 @@ package com.lm.qa.testcases;
 
 import java.io.IOException;
 
+//import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -12,6 +13,7 @@ import com.lm.qa.base.TestBase;
 import com.lm.qa.pages.IndexPage;
 import com.lm.qa.pages.LoginPage;
 import com.lm.qa.pages.MultipleWindowsPage;
+import com.lm.qa.utility.TestUtil;
 
 public class MultipleWindowsTestPage extends TestBase {
 
@@ -21,14 +23,13 @@ public class MultipleWindowsTestPage extends TestBase {
 	LoginTest logintest;
 	DropDownTest dptest = new DropDownTest();
 	MultipleWindowsPage mwp;
-	JavascriptExecutor js = (JavascriptExecutor) driver;
+	//JavascriptExecutor js = (JavascriptExecutor) driver;
 	String title;
 
 	public MultipleWindowsTestPage() {
 		super();
 	}
 
-	
 	@BeforeTest
 	public void setUp() {
 		initialization();
@@ -57,7 +58,9 @@ public class MultipleWindowsTestPage extends TestBase {
 	}
 
 	@AfterTest
-	public void teardown() {
+	public void teardown() throws Exception {
+		TestUtil tutil = new TestUtil();
+		tutil.writeExcel(0, 1, 1, "PASSED");
 		driver.close();
 	}
 

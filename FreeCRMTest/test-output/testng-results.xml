@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41391" started-at="2018-11-25T11:48:08Z" finished-at="2018-11-25T11:48:50Z">
+  <suite name="Default suite" duration-ms="126284" started-at="2018-11-25T17:42:22Z" finished-at="2018-11-25T17:44:29Z">
     <groups>
     </groups>
-    <test name="WindowHandleTest" duration-ms="41391" started-at="2018-11-25T11:48:08Z" finished-at="2018-11-25T11:48:50Z">
+    <test name="Default test" duration-ms="126284" started-at="2018-11-25T17:42:22Z" finished-at="2018-11-25T17:44:29Z">
       <class name="com.lm.qa.testcases.MultipleWindowsTestPage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.lm.qa.testcases.MultipleWindowsTestPage@71423665]" name="setUp" is-config="true" duration-ms="12020" started-at="2018-11-25T17:18:08Z" finished-at="2018-11-25T17:18:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.lm.qa.testcases.MultipleWindowsTestPage@71423665]" name="setUp" is-config="true" duration-ms="92497" started-at="2018-11-25T23:12:22Z" finished-at="2018-11-25T23:13:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="previousFunctions()[pri:0, instance:com.lm.qa.testcases.MultipleWindowsTestPage@71423665]" name="previousFunctions" duration-ms="17924" started-at="2018-11-25T17:18:20Z" finished-at="2018-11-25T17:18:38Z">
+        <test-method status="PASS" signature="previousFunctions()[pri:0, instance:com.lm.qa.testcases.MultipleWindowsTestPage@71423665]" name="previousFunctions" duration-ms="18362" started-at="2018-11-25T23:13:55Z" finished-at="2018-11-25T23:14:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- previousFunctions -->
-        <test-method status="PASS" signature="windowHandlingAction()[pri:1, instance:com.lm.qa.testcases.MultipleWindowsTestPage@71423665]" name="windowHandlingAction" duration-ms="8972" started-at="2018-11-25T17:18:38Z" finished-at="2018-11-25T17:18:47Z">
+        <test-method status="PASS" signature="windowHandlingAction()[pri:1, instance:com.lm.qa.testcases.MultipleWindowsTestPage@71423665]" name="windowHandlingAction" duration-ms="13088" started-at="2018-11-25T23:14:13Z" finished-at="2018-11-25T23:14:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- windowHandlingAction -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.lm.qa.testcases.MultipleWindowsTestPage@71423665]" name="teardown" is-config="true" duration-ms="2388" started-at="2018-11-25T17:18:47Z" finished-at="2018-11-25T17:18:50Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.lm.qa.testcases.MultipleWindowsTestPage@71423665]" name="teardown" is-config="true" duration-ms="2237" started-at="2018-11-25T23:14:26Z" finished-at="2018-11-25T23:14:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.lm.qa.testcases.MultipleWindowsTestPage -->
-    </test> <!-- WindowHandleTest -->
+    </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
