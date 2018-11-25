@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="41966" started-at="2018-11-25T09:01:17Z" finished-at="2018-11-25T09:01:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="41966" started-at="2018-11-25T09:01:17Z" finished-at="2018-11-25T09:01:59Z">
+      <class name="com.lm.qa.testcases.MultipleWindowsTestPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.lm.qa.testcases.MultipleWindowsTestPage@71423665]" name="setUp" is-config="true" duration-ms="12181" started-at="2018-11-25T14:31:17Z" finished-at="2018-11-25T14:31:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="previousFunctions()[pri:0, instance:com.lm.qa.testcases.MultipleWindowsTestPage@71423665]" name="previousFunctions" duration-ms="18354" started-at="2018-11-25T14:31:29Z" finished-at="2018-11-25T14:31:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- previousFunctions -->
+        <test-method status="PASS" signature="windowHandlingAction()[pri:1, instance:com.lm.qa.testcases.MultipleWindowsTestPage@71423665]" name="windowHandlingAction" duration-ms="9192" started-at="2018-11-25T14:31:48Z" finished-at="2018-11-25T14:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowHandlingAction -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.lm.qa.testcases.MultipleWindowsTestPage@71423665]" name="teardown" is-config="true" duration-ms="2140" started-at="2018-11-25T14:31:57Z" finished-at="2018-11-25T14:31:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.lm.qa.testcases.MultipleWindowsTestPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
