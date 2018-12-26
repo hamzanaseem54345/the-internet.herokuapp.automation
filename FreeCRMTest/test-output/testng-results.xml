@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46964" started-at="2018-12-01T09:53:10Z" finished-at="2018-12-01T09:53:57Z">
+  <suite name="Default suite" duration-ms="26001" started-at="2018-12-26T18:36:13Z" finished-at="2018-12-26T18:36:39Z">
     <groups>
     </groups>
-    <test name="WindowHandleTest" duration-ms="46964" started-at="2018-12-01T09:53:10Z" finished-at="2018-12-01T09:53:57Z">
-      <class name="com.lm.qa.testcases.MultipleWindowsTestPage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.lm.qa.testcases.MultipleWindowsTestPage@66480dd7]" name="setUp" is-config="true" duration-ms="14999" started-at="2018-12-01T15:23:10Z" finished-at="2018-12-01T15:23:25Z">
+    <test name="Default test" duration-ms="26001" started-at="2018-12-26T18:36:13Z" finished-at="2018-12-26T18:36:39Z">
+      <class name="com.lm.qa.testcases.MouseHoveringTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.lm.qa.testcases.MouseHoveringTest@3327bd23]" name="setUp" is-config="true" duration-ms="11402" started-at="2018-12-27T00:06:13Z" finished-at="2018-12-27T00:06:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="previousFunctions()[pri:0, instance:com.lm.qa.testcases.MultipleWindowsTestPage@66480dd7]" name="previousFunctions" duration-ms="17865" started-at="2018-12-01T15:23:25Z" finished-at="2018-12-01T15:23:43Z">
+        <test-method status="PASS" signature="mouseHoveringAction()[pri:1, instance:com.lm.qa.testcases.MouseHoveringTest@3327bd23]" name="mouseHoveringAction" duration-ms="11536" started-at="2018-12-27T00:06:24Z" finished-at="2018-12-27T00:06:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- previousFunctions -->
-        <test-method status="PASS" signature="windowHandlingAction()[pri:1, instance:com.lm.qa.testcases.MultipleWindowsTestPage@66480dd7]" name="windowHandlingAction" duration-ms="8895" started-at="2018-12-01T15:23:43Z" finished-at="2018-12-01T15:23:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- windowHandlingAction -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lm.qa.testcases.MultipleWindowsTestPage@66480dd7]" name="tearDown" is-config="true" duration-ms="5118" started-at="2018-12-01T15:23:52Z" finished-at="2018-12-01T15:23:57Z">
+        </test-method> <!-- mouseHoveringAction -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lm.qa.testcases.MouseHoveringTest@3327bd23]" name="tearDown" is-config="true" duration-ms="2951" started-at="2018-12-27T00:06:36Z" finished-at="2018-12-27T00:06:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.lm.qa.testcases.MultipleWindowsTestPage -->
-    </test> <!-- WindowHandleTest -->
+      </class> <!-- com.lm.qa.testcases.MouseHoveringTest -->
+    </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

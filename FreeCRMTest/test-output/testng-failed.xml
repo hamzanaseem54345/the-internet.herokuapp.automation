@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.lm.qa.testcases.MultipleWindowsTestPage">
+      <class name="com.lm.qa.testcases.MouseHoveringTest">
         <methods>
-          <include name="windowHandlingAction"/>
+          <include name="mouseHoveringAction"/>
           <include name="setUp"/>
-          <include name="teardown"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.lm.qa.testcases.MultipleWindowsTestPage -->
+      </class> <!-- com.lm.qa.testcases.MouseHoveringTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
