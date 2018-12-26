@@ -2,6 +2,7 @@ package com.lm.qa.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -20,12 +21,12 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop = new Properties();
-
-			FileInputStream fis = new FileInputStream(
+//FileReader or FileInputStream but FileReader because its the best way to read character files
+			FileReader fr = new FileReader(
 					"C:\\Users\\Hamza\\eclipse-workspace\\FreeCRMTest\\src\\main\\java\\com\\lm\\qa\\config\\config.properties");
 
 			try {
-				prop.load(fis);
+				prop.load(fr);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

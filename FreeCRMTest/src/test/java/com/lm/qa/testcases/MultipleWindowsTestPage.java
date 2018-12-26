@@ -2,10 +2,9 @@ package com.lm.qa.testcases;
 
 import java.io.IOException;
 
-//import org.apache.poi.EncryptedDocumentException;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.lm.qa.base.TestBase;
@@ -25,9 +24,16 @@ public class MultipleWindowsTestPage extends TestBase {
 	MultipleWindowsPage mwp;
 	//JavascriptExecutor js = (JavascriptExecutor) driver;
 	String title;
+/*@DataProvider(name = "Authentication")
+	 
+	 public static Object[][] credentials() {
+	 
+	        return new Object[][] { { "testuser_1", "Test@123" }, { "testuser_1", "Test@123" }};
+	  }*/
 
 	public MultipleWindowsTestPage() {
 		super();
+		
 	}
 
 	@BeforeTest
@@ -35,8 +41,10 @@ public class MultipleWindowsTestPage extends TestBase {
 		initialization();
 
 	}
+	
 
-	@Test(priority = 0)
+	@Test(priority = 0/*,dataProvider="Authentication"*/)
+	
 	public void previousFunctions() throws InterruptedException, IOException {
 
 		dptest.previousFunctions();
@@ -58,8 +66,11 @@ public class MultipleWindowsTestPage extends TestBase {
 	}
 
 	@AfterTest
-	public void teardown() throws Exception {
+	//@Parameters({"sheetNum","rowNum","cellNum"})
+	public void tearDown() throws Exception {
 		TestUtil tutil = new TestUtil();
+		
+		System.out.println(tutil.readExcel(0,0,1));
 		tutil.writeExcel(0, 1, 1, "PASSED");
 		driver.close();
 	}

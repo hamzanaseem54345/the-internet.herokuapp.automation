@@ -36,7 +36,7 @@ public class TestUtil extends TestBase {
 
 	}
 
-	public static String readExcel(int sheetNum, int rowNum, int cellNum)
+	public String readExcel(int sheetNum, int rowNum, int cellNum)
 			throws EncryptedDocumentException, IOException {
 		FileInputStream fis = new FileInputStream(src);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
@@ -59,12 +59,12 @@ public class TestUtil extends TestBase {
 		 //Now create a row number and a cell where we want to enter a value. 
 		 //Here im about to write my test data in the cell B2. It reads Column B as 1 and Row 2 as 1. Column and Row values start from 0.
 		 //The below line of code will search for row number 2 and column number 2 (i.e., B) and will create a space. 
-		                //The createCell() method is present inside Row class.
+		 //The createCell() method is present inside Row class.
 		 Row row = sheet.createRow(rowNum);
 		 Cell cell = row.createCell(cellNum);
 		 //Now we need to find out the type of the value we want to enter. 
-		                //If it is a string, we need to set the cell type as string 
-		                //if it is numeric, we need to set the cell type as number
+		 //If it is a string, we need to set the cell type as string 
+		 //if it is numeric, we need to set the cell type as number
 		 cell.setCellType(cell.getCellType());
 		 cell.setCellValue(testResult);
 		 FileOutputStream fos = new FileOutputStream(src);
