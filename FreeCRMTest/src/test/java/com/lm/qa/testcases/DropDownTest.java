@@ -24,14 +24,14 @@ public class DropDownTest extends TestBase {
 		super();
 	}
 	
-	@BeforeMethod
 	@BeforeTest
+	
 	public void setUp(){
 		initialization();
 		
 	}
 	
-	@Test(priority=0)
+	//@Test(priority=0)
 	public void previousFunctions() throws InterruptedException, IOException 
 	{
 		logintest= new LoginTest();
@@ -42,7 +42,7 @@ public class DropDownTest extends TestBase {
 	
 	@Test(priority=1)
 	public void dropdownactions() throws InterruptedException {
-	DropDownPage ddp=new DropDownPage();
+	DropDownPage ddp=new DropDownPage(getDriver());
 	ddp.dropdownlinkclick();
 	ddp.dropdwonselection();
 	//Thread.sleep(3000);

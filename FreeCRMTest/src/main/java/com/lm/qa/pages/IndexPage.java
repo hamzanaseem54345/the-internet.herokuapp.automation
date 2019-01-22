@@ -22,8 +22,8 @@ public class IndexPage extends TestBase {
 	//Actions
 	 public LoginPage loginSuccess()
 	 {
-		 LoginPage lp=new LoginPage(getDriver());
-		  lp.HandleAuth();
+		 LoginPage lp=new LoginPage();
+		  lp.HandleAuth(getDriver());
 		 return lp;
 	 }
 	 

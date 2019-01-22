@@ -2,6 +2,7 @@ package com.lm.qa.testcases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -59,7 +60,7 @@ public class MouseHoveringTest  extends TestBase{
 		mhv.clickTheHoverLink();
 		Thread.sleep(400);
 		mhv.hoverTheMouseOverElements();
-		tutil.takeScreenShot("MouseHovering");
+		tutil.takeScreenShot(getDriver(),"MouseHovering");
 		mhv.clickTheLinkWithImage1();
 		
 		Thread.sleep(3000);

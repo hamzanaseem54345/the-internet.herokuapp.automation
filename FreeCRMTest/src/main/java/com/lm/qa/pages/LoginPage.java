@@ -14,7 +14,7 @@ import com.lm.qa.utility.TestUtil;
 public class LoginPage extends TestBase {
 
 	
-	private WebDriver driver;
+	
 	
 
 	// Page Factory - ObjectRepository(OR)
@@ -46,13 +46,8 @@ public class LoginPage extends TestBase {
 	// Actions
 
 	
-	public LoginPage(WebDriver d) {
-		// TODO Auto-generated constructor stub
-		
-		this.driver=d;
-	}
-
-	public void HandleAuth() { 
+	
+	public void HandleAuth(WebDriver driver) { 
 	//Auth.click();
 		
 	String uname = prop.getProperty("username");
@@ -63,7 +58,7 @@ public class LoginPage extends TestBase {
 	alert.accept();*/
 	 }
 	 
-	public String validateLoginPageTitle() {
+	public String validateLoginPageTitle(WebDriver driver) {
 		
 		return driver.getTitle();
 	}
@@ -76,7 +71,7 @@ public class LoginPage extends TestBase {
 		// TODO Auto-generated method stub
 		String screename= "LoginPage";
 		TestUtil tu= new TestUtil();
-		tu.takeScreenShot(screename);
+		tu.takeScreenShot(getDriver(),screename);
 		
 	}
 

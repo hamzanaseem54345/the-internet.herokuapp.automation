@@ -16,11 +16,11 @@ import com.lm.qa.utility.TestUtil;
 
 public class MultipleWindowsTestPage extends TestBase {
 
-	IndexPage indexpage = new IndexPage();
-	LoginPage loginPage;
+	//IndexPage indexpage = new IndexPage();
+	//LoginPage loginPage;
 	// HomePage homePage;
-	LoginTest logintest;
-	DropDownTest dptest = new DropDownTest();
+	//LoginTest logintest;
+	//DropDownTest dptest = new DropDownTest();
 	MultipleWindowsPage mwp;
 	//JavascriptExecutor js = (JavascriptExecutor) driver;
 	String title;
@@ -43,9 +43,9 @@ public class MultipleWindowsTestPage extends TestBase {
 	}
 	
 
-	@Test(priority = 0/*,dataProvider="Authentication"*/)
+	//@Test(priority = 0/*,dataProvider="Authentication"*/)
 	
-	public void previousFunctions() throws InterruptedException, IOException {
+	/*public void previousFunctions() throws InterruptedException, IOException {
 
 		dptest.previousFunctions();
 		dptest.dropdownactions();
@@ -54,14 +54,14 @@ public class MultipleWindowsTestPage extends TestBase {
 		Thread.sleep(6000);
 
 	}
-
+*/
 	@Test(priority = 1)
 	public void windowHandlingAction() throws InterruptedException, IOException {
 		mwp = new MultipleWindowsPage();
-		mwp.clickheretodirecttowindow();
-		Thread.sleep(400);
-		mwp.clickheretodirecttonewwindow();
-		mwp.verifynewwindow();
+		mwp.clickheretodirecttowindow(getDriver());
+		Thread.sleep(4000);
+		mwp.clickheretodirecttonewwindow(getDriver());
+		mwp.verifynewwindow(getDriver());
 		Thread.sleep(5000);
 	}
 

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.lm.qa.testcases.IndexPageTest">
+      <class name="com.lm.qa.testcases.MultipleWindowsTestPage">
         <methods>
-          <include name="tearDown"/>
+          <include name="windowHandlingAction"/>
           <include name="setUp"/>
-          <include name="indexsuccess"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.lm.qa.testcases.IndexPageTest -->
+      </class> <!-- com.lm.qa.testcases.MultipleWindowsTestPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11978" started-at="2019-01-22T10:09:58Z" finished-at="2019-01-22T10:10:10Z">
+  <suite name="Default suite" duration-ms="35147" started-at="2019-01-22T12:04:37Z" finished-at="2019-01-22T12:05:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11978" started-at="2019-01-22T10:09:58Z" finished-at="2019-01-22T10:10:10Z">
-      <class name="com.lm.qa.testcases.IndexPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.lm.qa.testcases.IndexPageTest@47c62251]" name="setUp" is-config="true" duration-ms="11151" started-at="2019-01-22T15:39:59Z" finished-at="2019-01-22T15:40:10Z">
+    <test name="Default test" duration-ms="35147" started-at="2019-01-22T12:04:37Z" finished-at="2019-01-22T12:05:12Z">
+      <class name="com.lm.qa.testcases.DropDownTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.lm.qa.testcases.DropDownTest@47c62251]" name="setUp" is-config="true" duration-ms="33113" started-at="2019-01-22T17:34:37Z" finished-at="2019-01-22T17:35:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="indexsuccess()[pri:0, instance:com.lm.qa.testcases.IndexPageTest@47c62251]" name="indexsuccess" duration-ms="55" started-at="2019-01-22T15:40:10Z" finished-at="2019-01-22T15:40:10Z">
+        <test-method status="PASS" signature="dropdownactions()[pri:1, instance:com.lm.qa.testcases.DropDownTest@47c62251]" name="dropdownactions" duration-ms="1848" started-at="2019-01-22T17:35:10Z" finished-at="2019-01-22T17:35:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- indexsuccess -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lm.qa.testcases.IndexPageTest@47c62251]" name="tearDown" is-config="true" duration-ms="721" started-at="2019-01-22T15:40:10Z" finished-at="2019-01-22T15:40:10Z">
+        </test-method> <!-- dropdownactions -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.lm.qa.testcases.DropDownTest@47c62251]" name="teardown" is-config="true" duration-ms="130" started-at="2019-01-22T17:35:12Z" finished-at="2019-01-22T17:35:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.lm.qa.testcases.IndexPageTest -->
+        </test-method> <!-- teardown -->
+      </class> <!-- com.lm.qa.testcases.DropDownTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

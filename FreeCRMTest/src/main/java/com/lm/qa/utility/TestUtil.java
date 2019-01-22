@@ -13,6 +13,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
 import com.lm.qa.base.TestBase;
 
@@ -24,9 +25,9 @@ public class TestUtil extends TestBase {
 	static String testdata;
 	static File src= new File("C:\\Users\\Hamza\\git\\the-internet.herokuapp.automation\\FreeCRMTest\\Testdata\\SpreadSheetData.xlsx");
 
-	public void takeScreenShot(String screename) throws IOException {
-		TakesScreenshot ts;
-		ts = (TakesScreenshot) getDriver();
+	public void takeScreenShot(WebDriver driver,String screename) throws IOException {
+		
+		TakesScreenshot ts = (TakesScreenshot) driver;
 		File srcfile = ts.getScreenshotAs(OutputType.FILE);
 		File destfile = new File("./Screenshot/" + screename + ".jpg");
 		FileUtils.copyFile(srcfile, destfile);

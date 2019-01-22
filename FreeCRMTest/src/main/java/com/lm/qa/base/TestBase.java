@@ -54,19 +54,16 @@ public class TestBase extends DriverClass{
 			System.setProperty("webdriver.ie.driver","D:/Drivers-Selenium/IEDriverServer.exe" );
 		    setDriver(new InternetExplorerDriver());
 	}
+		getDriver().get(prop.getProperty("url"));
 		getDriver().manage().window().maximize();
 		getDriver().manage().deleteAllCookies();
 		//driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		getDriver().manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
-		getDriver().get(prop.getProperty("url"));
+		
 		
 	
 	}
 	
-	/*public LoginPage openSite() {
-		   driver.get(URL);
-			 
-		   return new LoginPage(this.driver);
-		 }*/
+	
 }
