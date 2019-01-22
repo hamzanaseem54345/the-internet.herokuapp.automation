@@ -28,10 +28,9 @@ public class LoginTest extends TestBase {
 
 	}
 
-	@Test(priority = 3)
+	//@Test(priority = 3)
 	public void loginsucess() throws InterruptedException, IOException {
-		loginPage = new LoginPage();
-		
+		loginPage = new LoginPage(getDriver());
 		loginPage.screenPic();
 		
 		Thread.sleep(3000);
@@ -40,16 +39,15 @@ public class LoginTest extends TestBase {
 	@Test(priority = 0)
 
 	public void loginWithUrl() throws InterruptedException {
-		loginPage = new LoginPage();
-		indexpage = new IndexPage();
+		loginPage = new LoginPage(getDriver());
 		loginPage.HandleAuth();
 		// System.out.println(screentext1);
 		Thread.sleep(5000);
 	}
 
-	@Test(priority = 2)
+	//@Test(priority = 2)
 	public void loginPageTitleTest() {
-		loginPage = new LoginPage();
+		loginPage = new LoginPage(getDriver());
 		indexpage = new IndexPage();
 		title = loginPage.validateLoginPageTitle();
 		AssertJUnit.assertEquals(title, "The Internet");
@@ -60,7 +58,7 @@ public class LoginTest extends TestBase {
 	
 	@AfterTest
 	public void tearDown() {
-		driver.quit();
+		getDriver().quit();
 	}
 
 }

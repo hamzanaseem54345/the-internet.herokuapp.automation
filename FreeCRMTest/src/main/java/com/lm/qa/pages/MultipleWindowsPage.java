@@ -27,20 +27,20 @@ public class MultipleWindowsPage extends TestBase {
 
 	public void clickheretodirecttowindow() throws InterruptedException {
 		
-		WebElement element = driver.findElement(By.xpath("//a[text()='Multiple Windows']"));
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		WebElement element = getDriver().findElement(By.linkText("sMultiple Windows"));
+		JavascriptExecutor executor = (JavascriptExecutor)getDriver();
 		executor.executeScript("arguments[0].click();", element);
 		
 
 	}
 
 	public void verifynewwindow() throws InterruptedException, IOException {
-		String parentwindow = driver.getWindowHandle();
-		Set <String> allwindows=driver.getWindowHandles();
+		String parentwindow = getDriver().getWindowHandle();
+		Set <String> allwindows=getDriver().getWindowHandles();
         for(String child:allwindows)
         {
         	if(!parentwindow.equalsIgnoreCase(child))
-        		driver.switchTo().window(child);
+        		getDriver().switchTo().window(child);
         	
         	TestUtil tutil = new TestUtil();
     		tutil.takeScreenShot("newwindow");
@@ -48,11 +48,11 @@ public class MultipleWindowsPage extends TestBase {
     		
     		//Assert.assertEquals("New Window", temp);	
         }
-        String childwindow=driver.getWindowHandle();
+        String childwindow=getDriver().getWindowHandle();
         System.out.println("Verified we have switched to child window: "+childwindow);
-        driver.close();
+        getDriver().close();
         
-		driver.switchTo().window(parentwindow);
+		getDriver().switchTo().window(parentwindow);
 		System.out.println("This is now a parent window: "+parentwindow);
 		
 
@@ -61,8 +61,8 @@ public class MultipleWindowsPage extends TestBase {
 	public void clickheretodirecttonewwindow() throws InterruptedException {
 		// TODO Auto-generated method stub
 
-		WebElement element = driver.findElement(By.xpath("//a[text()='Click Here']"));
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		WebElement element = getDriver().findElement(By.xpath("//a[text()='Click Here']"));
+		JavascriptExecutor executor = (JavascriptExecutor)getDriver();
 		executor.executeScript("arguments[0].click();", element);
 	}
 

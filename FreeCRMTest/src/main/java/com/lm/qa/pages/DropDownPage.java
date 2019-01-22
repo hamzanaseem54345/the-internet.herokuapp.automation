@@ -17,7 +17,7 @@ public class DropDownPage extends TestBase {
 
 public DropDownPage() {
 		// TODO Auto-generated constructor stub
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 
 	}
 

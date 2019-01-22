@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.lm.qa.testcases.MouseHoveringTest">
+      <class name="com.lm.qa.testcases.IndexPageTest">
         <methods>
-          <include name="mouseHoveringAction"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="indexsuccess"/>
         </methods>
-      </class> <!-- com.lm.qa.testcases.MouseHoveringTest -->
+      </class> <!-- com.lm.qa.testcases.IndexPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

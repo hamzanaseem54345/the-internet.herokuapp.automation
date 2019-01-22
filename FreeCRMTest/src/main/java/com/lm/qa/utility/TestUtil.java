@@ -9,9 +9,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
@@ -29,7 +26,7 @@ public class TestUtil extends TestBase {
 
 	public void takeScreenShot(String screename) throws IOException {
 		TakesScreenshot ts;
-		ts = (TakesScreenshot) driver;
+		ts = (TakesScreenshot) getDriver();
 		File srcfile = ts.getScreenshotAs(OutputType.FILE);
 		File destfile = new File("./Screenshot/" + screename + ".jpg");
 		FileUtils.copyFile(srcfile, destfile);
@@ -69,6 +66,7 @@ public class TestUtil extends TestBase {
 		 cell.setCellValue(testResult);
 		 FileOutputStream fos = new FileOutputStream(src);
 		 wb1.write(fos);
+		 wb1.close();
 		 fos.close();
 		 System.out.println("END OF WRITING DATA IN EXCEL");
 

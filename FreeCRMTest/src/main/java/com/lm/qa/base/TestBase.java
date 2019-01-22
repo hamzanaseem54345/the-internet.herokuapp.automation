@@ -11,13 +11,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import com.lm.qa.pages.DriverClass;
+import com.lm.qa.pages.LoginPage;
 import com.lm.qa.utility.TestUtil;
 
-public class TestBase {
+public class TestBase extends DriverClass{
 
-	public static WebDriver driver;
-	public static Properties prop;
-
+	
+	//public static ChromeDriver driver1;
+	
+	
 	public TestBase() {
 		try {
 			prop = new Properties();
@@ -38,24 +41,32 @@ public class TestBase {
 
 	}
 
-	public static void initialization()
+	public void initialization()
 	{
+		
 		String browsername= prop.getProperty("browser");
 		if(browsername.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver","D:/Drivers-Selenium/chromedriver.exe");
-			driver=new ChromeDriver();
+		        setDriver(new ChromeDriver());
 		}
 		else {
 			System.setProperty("webdriver.ie.driver","D:/Drivers-Selenium/IEDriverServer.exe" );
-		    driver=new InternetExplorerDriver();
+		    setDriver(new InternetExplorerDriver());
 	}
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		getDriver().manage().window().maximize();
+		getDriver().manage().deleteAllCookies();
 		//driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
-		driver.get(prop.getProperty("url"));
+		getDriver().get(prop.getProperty("url"));
+		
 	
 	}
+	
+	/*public LoginPage openSite() {
+		   driver.get(URL);
+			 
+		   return new LoginPage(this.driver);
+		 }*/
 }

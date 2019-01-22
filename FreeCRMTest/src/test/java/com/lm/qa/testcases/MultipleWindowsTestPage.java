@@ -50,7 +50,7 @@ public class MultipleWindowsTestPage extends TestBase {
 		dptest.previousFunctions();
 		dptest.dropdownactions();
 		Thread.sleep(3000);
-		driver.navigate().back();
+		getDriver().navigate().back();
 		Thread.sleep(6000);
 
 	}
@@ -72,7 +72,7 @@ public class MultipleWindowsTestPage extends TestBase {
 		
 		System.out.println(tutil.readExcel(0,0,1));
 		tutil.writeExcel(0, 1, 1, "PASSED");
-		driver.close();
+		getDriver().close();
 	}
 
 }

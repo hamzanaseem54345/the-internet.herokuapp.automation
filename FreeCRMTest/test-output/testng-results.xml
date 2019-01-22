@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26001" started-at="2018-12-26T18:36:13Z" finished-at="2018-12-26T18:36:39Z">
+  <suite name="Default suite" duration-ms="11978" started-at="2019-01-22T10:09:58Z" finished-at="2019-01-22T10:10:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26001" started-at="2018-12-26T18:36:13Z" finished-at="2018-12-26T18:36:39Z">
-      <class name="com.lm.qa.testcases.MouseHoveringTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.lm.qa.testcases.MouseHoveringTest@3327bd23]" name="setUp" is-config="true" duration-ms="11402" started-at="2018-12-27T00:06:13Z" finished-at="2018-12-27T00:06:24Z">
+    <test name="Default test" duration-ms="11978" started-at="2019-01-22T10:09:58Z" finished-at="2019-01-22T10:10:10Z">
+      <class name="com.lm.qa.testcases.IndexPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.lm.qa.testcases.IndexPageTest@47c62251]" name="setUp" is-config="true" duration-ms="11151" started-at="2019-01-22T15:39:59Z" finished-at="2019-01-22T15:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="mouseHoveringAction()[pri:1, instance:com.lm.qa.testcases.MouseHoveringTest@3327bd23]" name="mouseHoveringAction" duration-ms="11536" started-at="2018-12-27T00:06:24Z" finished-at="2018-12-27T00:06:36Z">
+        <test-method status="PASS" signature="indexsuccess()[pri:0, instance:com.lm.qa.testcases.IndexPageTest@47c62251]" name="indexsuccess" duration-ms="55" started-at="2019-01-22T15:40:10Z" finished-at="2019-01-22T15:40:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mouseHoveringAction -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lm.qa.testcases.MouseHoveringTest@3327bd23]" name="tearDown" is-config="true" duration-ms="2951" started-at="2018-12-27T00:06:36Z" finished-at="2018-12-27T00:06:39Z">
+        </test-method> <!-- indexsuccess -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lm.qa.testcases.IndexPageTest@47c62251]" name="tearDown" is-config="true" duration-ms="721" started-at="2019-01-22T15:40:10Z" finished-at="2019-01-22T15:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.lm.qa.testcases.MouseHoveringTest -->
+      </class> <!-- com.lm.qa.testcases.IndexPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

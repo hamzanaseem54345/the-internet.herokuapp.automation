@@ -16,13 +16,13 @@ public class IndexPage extends TestBase {
 	
 	public IndexPage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	//Actions
 	 public LoginPage loginSuccess()
 	 {
-		 LoginPage lp=new LoginPage();
+		 LoginPage lp=new LoginPage(getDriver());
 		  lp.HandleAuth();
 		 return lp;
 	 }

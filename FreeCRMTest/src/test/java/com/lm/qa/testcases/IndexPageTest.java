@@ -21,14 +21,14 @@ public class IndexPageTest extends TestBase {
 
 	public void setUp() {
 		initialization();
-		loginPage = new LoginPage();
+		/*loginPage = new LoginPage(getDriver());*/
 
 	}
 
 	@Test(priority = 0)
 
 	public void indexsuccess() {
-		title = driver.getCurrentUrl();
+		title = getDriver().getCurrentUrl();
 		AssertJUnit.assertEquals(title, "http://the-internet.herokuapp.com/");
 		System.out.println(title);
 	}
@@ -36,7 +36,7 @@ public class IndexPageTest extends TestBase {
 	@AfterMethod
 
 	public void tearDown() {
-		driver.quit();
+		getDriver().quit();
 	}
 
 }

@@ -36,7 +36,7 @@ public class DropDownTest extends TestBase {
 	{
 		logintest= new LoginTest();
 		logintest.loginWithUrl();
-		driver.navigate().back();
+		getDriver().navigate().back();
 		
 	}
 	
@@ -51,6 +51,6 @@ public class DropDownTest extends TestBase {
 	@AfterTest
 	public void teardown()
 	{
-		driver.close();
+		getDriver().close();
 	}
 }

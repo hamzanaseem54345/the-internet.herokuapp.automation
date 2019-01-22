@@ -2,6 +2,8 @@ package com.lm.qa.pages;
 
 import java.util.List;
 
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
@@ -32,20 +34,20 @@ public class MouseHovering extends TestBase {
 	WebElement image1link;
 	
 	public MouseHovering() {
-	PageFactory.initElements(driver, this);
+	PageFactory.initElements(getDriver(), this);
 	}
 	public void clickTheHoverLink() throws InterruptedException {
 		
-		WebElement element = driver.findElement(By.linkText("Hovers"));
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		WebElement element = getDriver().findElement(By.linkText("Hovers"));
+		JavascriptExecutor executor = (JavascriptExecutor)getDriver();
 		executor.executeScript("arguments[0].click();", element);
 		Thread.sleep(2000);
 		
 	}
 public void hoverTheMouseOverElements() throws InterruptedException {
-		List <WebElement> eList=driver.findElements(By.xpath("//div[contains(@class, 'figure')]/child::img[@src='/img/avatar-blank.jpg']"));
+		List <WebElement> eList=getDriver().findElements(By.xpath("//div[contains(@class, 'figure')]/child::img[@src='/img/avatar-blank.jpg']"));
 		WebElement img1elements=eList.get(0);
-		Actions action= new Actions(driver);
+		Actions action= new Actions(getDriver());
 		action.moveToElement(img1elements).build().perform();
 		Thread.sleep(2000);
 		//image1link.click();
